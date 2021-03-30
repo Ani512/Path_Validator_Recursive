@@ -1,0 +1,8 @@
+run: filecnt.o filedisp.o version.o
+	g++ -std=c++1z filecnt.o version.o -o output 
+	g++ -std=c++1z filedisp.o -o pipe
+filecnt.o: filecnt.cpp ; g++ -std=c++1z -c filecnt.cpp
+filedisp.o: filedisp.cpp ; g++ -std=c++1z -c filedisp.cpp
+version.o: version.cpp ; g++ -std=c++1z -c version.cpp
+clean: 
+	rm -f *.o output pipe
