@@ -48,5 +48,3 @@ int main(int argc, char *argv[])
     }
   }
 }
-
-// Comment is this
